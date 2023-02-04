@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Metropolis-medium";
+  src: url(../Fonts/Metropolismedium.woff);
+}
+@font-face {
+  font-family: "Metropolis-bold";
+  src: url(../Fonts/Metropolisblack.woff);
+}
+body {
+  font-family: "Metropolis-medium", "Metropolis-bold", sans-serif;
+}
+
+h1 {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+/*# sourceMappingURL=style.css.map */
