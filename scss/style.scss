@@ -1,9 +1,90 @@
 @import 'font';
+@import 'colors';
 
-h1 {
-    font-family: 'Metropolis';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 16px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Metropolis-medium', 'Metropolis-bold', sans-serif;
+    width: 100%;
+    max-width: 1440px;
+    height: 100%;
+
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.button__item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.header {
+    &__wrapper {
+        display: flex;
+    }
+
+    &__logo {
+        width: 48px;
+        height: 48px;
+        margin-top: 24px;
+        margin-right: 395px;
+    }
+
+    &__menu {
+        font-family: 'Metropolis';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 14px;
+
+        height: 38px;
+        margin-top: 19px;
+        margin-right: 47px;
+
+        display: flex;
+        align-items: center;
+        gap: 35px;
+    }
+
+    &__button {
+        width: 142px;
+        height: 38px;
+        margin-top: 19px;
+
+        background: #fff;
+        color: $primary-purple;
+        border: 1px solid $primary-purple;
+        border-radius: 23px;
+
+        cursor: pointer;
+
+        &:hover {
+            border: none;
+            background: linear-gradient(
+                90deg,
+                rgba(114, 46, 209, 1) 50%,
+                rgba(160, 160, 189, 1) 100%
+            );
+            color: #fff;
+            transition: 0.3s ease;
+        }
+    }
 }

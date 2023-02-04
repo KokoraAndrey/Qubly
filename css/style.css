@@ -10,12 +10,77 @@ body {
   font-family: "Metropolis-medium", "Metropolis-bold", sans-serif;
 }
 
-h1 {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Metropolis-medium", "Metropolis-bold", sans-serif;
+  width: 100%;
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.button__item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.header__wrapper {
+  display: flex;
+}
+.header__logo {
+  width: 48px;
+  height: 48px;
+  margin-top: 24px;
+  margin-right: 395px;
+}
+.header__menu {
   font-family: "Metropolis";
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 17px;
+  line-height: 14px;
+  height: 38px;
+  margin-top: 19px;
+  margin-right: 47px;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+.header__button {
+  width: 142px;
+  height: 38px;
+  margin-top: 19px;
+  background: #fff;
+  color: #722ed1;
+  border: 1px solid #722ed1;
+  border-radius: 23px;
+  cursor: pointer;
+}
+.header__button:hover {
+  border: none;
+  background: linear-gradient(90deg, rgb(114, 46, 209) 50%, rgb(160, 160, 189) 100%);
+  color: #fff;
+  transition: 0.3s ease;
 }
 
 /*# sourceMappingURL=style.css.map */
