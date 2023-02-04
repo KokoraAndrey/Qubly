@@ -16,6 +16,16 @@ body {
     margin: 0 auto;
 }
 
+.gradient {
+    width: 100%;
+    max-width: 1440px;
+    height: 696px;
+
+    position: absolute;
+    z-index: -1;
+
+    background: linear-gradient(180deg, #ffffff 0%, #e2f1ff 100%);
+}
 .container {
     max-width: 960px;
     margin: 0 auto;
@@ -49,19 +59,19 @@ a {
     }
 
     &__menu {
-        font-family: 'Metropolis';
+        font-family: 'Metropolis-medium';
         font-style: normal;
         font-weight: 500;
-        font-size: 17px;
+        font-size: 14px;
         line-height: 14px;
 
         height: 38px;
         margin-top: 19px;
-        margin-right: 47px;
+        margin-right: 40px;
 
         display: flex;
         align-items: center;
-        gap: 35px;
+        gap: 40px;
     }
 
     &__button {
@@ -85,6 +95,101 @@ a {
             );
             color: #fff;
             transition: 0.3s ease;
+        }
+    }
+}
+
+.hero {
+    margin-top: 96px;
+
+    &__wrapper {
+        display: flex;
+        gap: 16px;
+    }
+
+    &__content {
+        width: 472px;
+    }
+
+    &__pretitle {
+        width: 258px;
+        height: 40px;
+        margin-top: 31px;
+        padding: 8px 16px 8px 16px;
+
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        background: $light-gray;
+        border-radius: 20px;
+        color: $primary-purple;
+    }
+
+    &__text {
+        font-family: 'Metropolis-medium';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__title {
+        font-family: 'Metropolis-bold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+
+        margin-top: 24px;
+        color: #000000;
+    }
+
+    &__image {
+        width: 472px;
+        height: 370px;
+    }
+
+    &__description {
+        font-family: 'Metropolis-medium';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+
+        margin-top: 24px;
+
+        opacity: 0.5;
+    }
+
+    &__buttons {
+        margin-top: 16px;
+    }
+
+    &__button {
+        font-family: 'Metropolis-medium';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 14px;
+
+        width: 142px;
+        height: 38px;
+        padding: 12px 24px;
+
+        border: none;
+        border-radius: 23px;
+        cursor: pointer;
+
+        &--purple {
+            background-color: $primary-purple;
+            color: white;
+            margin-right: 16px;
+        }
+
+        &--white {
+            background-color: white;
+            color: $primary-purple;
         }
     }
 }
