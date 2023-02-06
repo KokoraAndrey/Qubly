@@ -16,6 +16,15 @@ body {
     margin: 0 auto;
 }
 
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+li {
+    list-style-type: none;
+}
+
 .gradient {
     width: 100%;
     max-width: 1440px;
@@ -26,15 +35,6 @@ body {
 
     background: linear-gradient(180deg, #ffffff 0%, #e2f1ff 100%);
 }
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-}
-
-li {
-    list-style-type: none;
-}
-
 a {
     text-decoration: none;
     color: inherit;
@@ -191,5 +191,343 @@ a {
             background-color: white;
             color: $primary-purple;
         }
+    }
+}
+.why {
+    margin-top: 312px;
+
+    display: flex;
+    justify-content: center;
+
+    &__pretitle {
+        margin: 0 auto;
+        width: 159px;
+        height: 40px;
+        padding: 8px 16px;
+        gap: 12px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: $light-gray;
+        color: $primary-purple;
+        border-radius: 20px;
+    }
+
+    &__title-block {
+        font-family: 'Metropolis-Medium';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__title {
+        font-family: 'Metropolis-Bold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+
+        margin-top: 24px;
+        text-align: center;
+    }
+
+    &__discription {
+        font-family: 'Metropolis-Medium';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+
+        margin-top: 24px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+        color: #8989a2;
+    }
+
+    &__list {
+        display: flex;
+        gap: 24px;
+
+        margin-top: 24px;
+    }
+
+    &__item {
+        text-align: center;
+        max-width: 317px;
+    }
+
+    &__border {
+        width: 40px;
+        height: 40px;
+        margin: 0 auto;
+
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &--blue {
+            background-color: #e6f7ff;
+        }
+        &--red {
+            background-color: #fff1f0;
+        }
+        &--green {
+            background-color: #f6ffed;
+        }
+    }
+
+    &__title-item {
+        font-family: 'Metropolis-Bold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+
+        margin-top: 16px;
+        color: #160637;
+    }
+
+    &__discription-item {
+        font-family: 'Metropolis-Medium';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+
+        color: #8989a2;
+        margin-top: 16px;
+    }
+}
+
+.product {
+    &__wrapper {
+        display: flex;
+        margin-top: 120px;
+        gap: 88px;
+        position: relative;
+        height: 435.5px;
+        width: 974.5px;
+    }
+
+    &__image {
+        width: 412.5px;
+        height: 435.5px;
+        position: absolute;
+        top: 0;
+        left: -16px;
+    }
+
+    &__content {
+        margin-top: 125px;
+        width: 474px;
+        height: 200px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    &__pretitle {
+        height: 40px;
+        width: 224px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+
+        color: $primary-purple;
+        background-color: #f9f0ff;
+        border-radius: 20px;
+    }
+
+    &__title {
+        margin-top: 24px;
+
+        font-family: 'Metropolis-Bold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+
+        color: #160637;
+    }
+
+    &__discription {
+        margin-top: 24px;
+
+        font-family: 'Metropolis-Medium';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+
+        color: #8989a2;
+    }
+}
+
+.teams {
+    &__wrapper {
+        width: 1182px - 184px;
+        height: 414px;
+        margin-top: 120.5px;
+        display: flex;
+
+        position: relative;
+    }
+
+    &__content {
+        margin-top: 120px;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &__pretitle {
+        width: 258px;
+        height: 40px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+
+        color: $primary-purple;
+        background-color: #f9f0ff;
+        border-radius: 20px;
+    }
+
+    &__title {
+        margin-top: 24px;
+
+        font-family: 'Metropolis-Bold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+
+        color: #160637;
+    }
+
+    &__discription {
+        margin-top: 24px;
+
+        font-family: 'Metropolis-Medium';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+
+        color: #8989a2;
+    }
+
+    &__image {
+        max-width: 500px;
+        height: 414px;
+
+        position: absolute;
+        top: 0;
+        right: -120px;
+    }
+}
+
+.persona {
+    position: relative;
+    &__trapezoid {
+        margin-top: 100px;
+        width: 100%;
+        height: 730.5px;
+
+        background: linear-gradient(175.54deg, #f9f0ff 25.81%, #e2f1ff 96.38%);
+        opacity: 0.47;
+
+        transform: skewY(-10deg);
+
+        position: absolute;
+        top: -270px;
+        left: 0;
+        z-index: -2;
+    }
+
+    &__wrapper {
+        margin-top: 218px;
+        text-align: center;
+        position: relative;
+    }
+
+    &__text {
+        font-family: 'Metropolis-Medium';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+
+        color: #160637;
+    }
+
+    &__image {
+        margin-top: 32px;
+
+        height: 80px;
+        width: 80px;
+    }
+
+    &__discription {
+        margin-top: 32px;
+
+        font-family: 'Metropolis-Medium';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+
+        color: #000000;
+    }
+
+    &__separate {
+        margin-top: 32px;
+        width: 964px;
+        height: 0px;
+
+        border: 1px solid #dec9fa;
+    }
+
+    &__brends {
+        margin-top: 32px;
+
+        display: flex;
+        justify-content: row;
+        gap: 91px;
+    }
+
+    &__tonkean {
+        width: 144.63px;
+        height: 38.02px;
+    }
+
+    &__big-spring {
+        width: 151.32px;
+        height: 31.01px;
+    }
+
+    &__clearbit {
+        width: 111.66px;
+        height: 29.06px;
+    }
+
+    &__mine {
+        width: 85.21px;
+        height: 29.62px;
+    }
+
+    &__shake {
+        width: 86.56px;
+        height: 29.99px;
     }
 }
